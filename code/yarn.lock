@@ -3670,11 +3670,11 @@ __metadata:
   linkType: hard
 
 "@happy-dom/global-registrator@npm:^14.12.0":
-  version: 14.12.0
-  resolution: "@happy-dom/global-registrator@npm:14.12.0"
+  version: 14.12.3
+  resolution: "@happy-dom/global-registrator@npm:14.12.3"
   dependencies:
-    happy-dom: "npm:^14.12.0"
-  checksum: 10c0/dae4356c93343950aef2483f038aaad462dce178c2737268abfd1f7c5a6679c4907f384aca02e9dd746fd9f1779010aa2bd7b5c7fa7a5d7707f3df4a3798c415
+    happy-dom: "npm:^14.12.3"
+  checksum: 10c0/017bea87f4cdf67b025b926484197a4a73fdc9bb8eb2dc816b0574ba0d6b58277652bc2f9efb196d4ac8487dee26480cba3b470480d124f1d16b81d97f5b5703
   languageName: node
   linkType: hard
 
@@ -6328,6 +6328,7 @@ __metadata:
     giget: "npm:^1.0.0"
     glob: "npm:^10.0.0"
     globby: "npm:^14.0.1"
+    htmlparser2: "npm:^9.1.0"
     jscodeshift: "npm:^0.15.1"
     leven: "npm:^3.1.0"
     prompts: "npm:^2.4.0"
@@ -6513,6 +6514,7 @@ __metadata:
     esbuild-register: "npm:^3.5.0"
     execa: "npm:^8.0.1"
     express: "npm:^4.19.2"
+    express-rate-limit: "npm:^7.4.0"
     fd-package-json: "npm:^1.2.0"
     fetch-retry: "npm:^6.0.0"
     file-system-cache: "npm:^2.4.4"
@@ -6755,6 +6757,7 @@ __metadata:
     "@storybook/manager-api": "workspace:^"
     "@storybook/preview-api": "workspace:^"
     "@storybook/theming": "workspace:^"
+    dompurify: "npm:^3.1.7"
     ts-dedent: "npm:^2.0.0"
     typescript: "npm:^5.3.2"
   peerDependencies:
@@ -7074,7 +7077,7 @@ __metadata:
     vue-docgen-api: "npm:^4.75.1"
     vue-docgen-loader: "npm:^1.5.1"
     vue-loader: "npm:^16.0.0"
-    webpack: "npm:5"
+    webpack: "npm:5.94.0"
   peerDependencies:
     "@vue/compiler-sfc": ^3.0.0
     storybook: "workspace:^"
@@ -13955,6 +13958,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dompurify@npm:^3.1.7":
+  version: 3.1.7
+  resolution: "dompurify@npm:3.1.7"
+  checksum: 10c0/fcceef2e9f824d712a056fa699b0538f3337f5cf00ccb7227bdc7eba5463823e15d9aecc00a2fd81c726b28a71e7b09f0eb8a2fde1021c40e35f12dc67b66394
+  languageName: node
+  linkType: hard
+
 "domutils@npm:^2.0.0, domutils@npm:^2.5.2, domutils@npm:^2.8.0":
   version: 2.8.0
   resolution: "domutils@npm:2.8.0"
@@ -13966,7 +13976,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domutils@npm:^3.0.1":
+"domutils@npm:^3.0.1, domutils@npm:^3.1.0":
   version: 3.1.0
   resolution: "domutils@npm:3.1.0"
   dependencies:
@@ -15611,6 +15621,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"express-rate-limit@npm:^7.4.0":
+  version: 7.4.0
+  resolution: "express-rate-limit@npm:7.4.0"
+  peerDependencies:
+    express: 4 || 5 || ^5.0.0-beta.1
+  checksum: 10c0/f6ceb7278f8f0af2ad3a7d6a7e791d29cd278366e107aa98cc16e93b95c5b4e35b749bb2a24454d9d54069b204fa6c26a49075672b63341ad948339fe3d797d3
+  languageName: node
+  linkType: hard
+
 "express@npm:^4.17.3, express@npm:^4.19.2":
   version: 4.21.0
   resolution: "express@npm:4.21.0"
@@ -17100,6 +17119,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"happy-dom@npm:^14.12.3":
+  version: 14.12.3
+  resolution: "happy-dom@npm:14.12.3"
+  dependencies:
+    entities: "npm:^4.5.0"
+    webidl-conversions: "npm:^7.0.0"
+    whatwg-mimetype: "npm:^3.0.0"
+  checksum: 10c0/72e817bc9d03c4c0dbb794f8fb5b69aac4b4dbe0ee789a6b6a02a60298a9aa99bac766967a5c642153e5c95c02489437f878de5641ed64fd13b2271c56805df5
+  languageName: node
+  linkType: hard
+
 "has-bigints@npm:^1.0.1, has-bigints@npm:^1.0.2":
   version: 1.0.2
   resolution: "has-bigints@npm:1.0.2"
@@ -17580,6 +17610,18 @@ __metadata:
     domutils: "npm:^3.0.1"
     entities: "npm:^4.4.0"
   checksum: 10c0/609cca85886d0bf2c9a5db8c6926a89f3764596877492e2caa7a25a789af4065bc6ee2cdc81807fe6b1d03a87bf8a373b5a754528a4cc05146b713c20575aab4
+  languageName: node
+  linkType: hard
+
+"htmlparser2@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "htmlparser2@npm:9.1.0"
+  dependencies:
+    domelementtype: "npm:^2.3.0"
+    domhandler: "npm:^5.0.3"
+    domutils: "npm:^3.1.0"
+    entities: "npm:^4.5.0"
+  checksum: 10c0/394f6323efc265bbc791d8c0d96bfe95984e0407565248521ab92e2dc7668e5ceeca7bc6ed18d408b9ee3b25032c5743368a4280d280332d782821d5d467ad8f
   languageName: node
   linkType: hard
 
@@ -29912,6 +29954,42 @@ __metadata:
   bin:
     webpack: bin/webpack.js
   checksum: 10c0/f737aa871cadbbae89833eb85387f1bf9ee0768f039100a3c8134f2fdcc78c3230ca775c373b1aa467b272f74c6831e119f7a8a1c14dcac97327212be9c93eeb
+  languageName: node
+  linkType: hard
+
+"webpack@npm:5.94.0":
+  version: 5.94.0
+  resolution: "webpack@npm:5.94.0"
+  dependencies:
+    "@types/estree": "npm:^1.0.5"
+    "@webassemblyjs/ast": "npm:^1.12.1"
+    "@webassemblyjs/wasm-edit": "npm:^1.12.1"
+    "@webassemblyjs/wasm-parser": "npm:^1.12.1"
+    acorn: "npm:^8.7.1"
+    acorn-import-attributes: "npm:^1.9.5"
+    browserslist: "npm:^4.21.10"
+    chrome-trace-event: "npm:^1.0.2"
+    enhanced-resolve: "npm:^5.17.1"
+    es-module-lexer: "npm:^1.2.1"
+    eslint-scope: "npm:5.1.1"
+    events: "npm:^3.2.0"
+    glob-to-regexp: "npm:^0.4.1"
+    graceful-fs: "npm:^4.2.11"
+    json-parse-even-better-errors: "npm:^2.3.1"
+    loader-runner: "npm:^4.2.0"
+    mime-types: "npm:^2.1.27"
+    neo-async: "npm:^2.6.2"
+    schema-utils: "npm:^3.2.0"
+    tapable: "npm:^2.1.1"
+    terser-webpack-plugin: "npm:^5.3.10"
+    watchpack: "npm:^2.4.1"
+    webpack-sources: "npm:^3.2.3"
+  peerDependenciesMeta:
+    webpack-cli:
+      optional: true
+  bin:
+    webpack: bin/webpack.js
+  checksum: 10c0/b4d1b751f634079bd177a89eef84d80fa5bb8d6fc15d72ab40fc2b9ca5167a79b56585e1a849e9e27e259803ee5c4365cb719e54af70a43c06358ec268ff4ebf
   languageName: node
   linkType: hard
 
